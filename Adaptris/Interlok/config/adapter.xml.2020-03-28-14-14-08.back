@@ -1,0 +1,145 @@
+<adapter>
+  <unique-id>MyInterlokInstance</unique-id>
+  <start-up-event-imp>com.adaptris.core.event.StandardAdapterStartUpEvent</start-up-event-imp>
+  <heartbeat-event-imp>com.adaptris.core.HeartbeatEvent</heartbeat-event-imp>
+  <shared-components>
+    <connections/>
+    <services/>
+  </shared-components>
+  <event-handler class="default-event-handler">
+    <unique-id>DefaultEventHandler</unique-id>
+    <connection class="null-connection">
+      <unique-id>nostalgic-franklin</unique-id>
+    </connection>
+    <producer class="null-message-producer">
+      <unique-id>romantic-blackwell</unique-id>
+    </producer>
+  </event-handler>
+  <heartbeat-event-interval>
+    <unit>MINUTES</unit>
+    <interval>60</interval>
+  </heartbeat-event-interval>
+  <message-error-handler class="null-processing-exception-handler">
+    <unique-id>nostalgic-mclean</unique-id>
+  </message-error-handler>
+  <failed-message-retrier class="no-retries">
+    <unique-id>big-nightingale</unique-id>
+  </failed-message-retrier>
+  <channel-list>
+    <channel>
+      <consume-connection class="null-connection">
+        <unique-id>loving-payne</unique-id>
+      </consume-connection>
+      <produce-connection class="null-connection">
+        <unique-id>hungry-ardinghelli</unique-id>
+      </produce-connection>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="polling-trigger">
+            <unique-id>pensive-shirley</unique-id>
+            <poller class="fixed-interval-poller">
+              <poll-interval>
+                <unit>SECONDS</unit>
+                <interval>20</interval>
+              </poll-interval>
+            </poller>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>compassionate-austin</unique-id>
+            <services>
+              <add-timestamp-metadata-service>
+                <unique-id>sharp-turing</unique-id>
+                <metadata-key>filename</metadata-key>
+                <date-format-builder>
+                  <format>yyyy-MM-dd&apos;T&apos;HHmmss</format>
+                </date-format-builder>
+              </add-timestamp-metadata-service>
+            </services>
+          </service-collection>
+          <producer class="fs-producer">
+            <unique-id>trusting-panini</unique-id>
+            <destination class="configured-destination">
+              <destination>msgs/out</destination>
+            </destination>
+            <create-dirs>true</create-dirs>
+            <fs-worker class="fs-overwrite-file"/>
+            <filename-creator class="metadata-file-name-creator">
+              <metadata-key>filename</metadata-key>
+              <default-name>MetadataFileNameCreator_default</default-name>
+            </filename-creator>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>boring-engelbart OUT</unique-id>
+          <message-metrics-interceptor>
+            <unique-id>boring-engelbart-MessageMetrics</unique-id>
+            <timeslice-duration>
+              <unit>MINUTES</unit>
+              <interval>5</interval>
+            </timeslice-duration>
+            <timeslice-history-count>12</timeslice-history-count>
+          </message-metrics-interceptor>
+          <in-flight-workflow-interceptor>
+            <unique-id>boring-engelbart-InFlight</unique-id>
+          </in-flight-workflow-interceptor>
+        </standard-workflow>
+        <standard-workflow>
+          <consumer class="polling-trigger">
+            <unique-id>evil-easley</unique-id>
+            <poller class="fixed-interval-poller">
+              <poll-interval>
+                <unit>SECONDS</unit>
+                <interval>20</interval>
+              </poll-interval>
+            </poller>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>prickly-almeida</unique-id>
+            <services>
+              <add-timestamp-metadata-service>
+                <unique-id>eager-knuth</unique-id>
+                <metadata-key>filenameIn</metadata-key>
+                <date-format-builder>
+                  <format>yyyy-MM-dd&apos;T&apos;HHmmss</format>
+                </date-format-builder>
+              </add-timestamp-metadata-service>
+              <log-message-service>
+                <unique-id>sleepy-elion</unique-id>
+                <log-level>DEBUG</log-level>
+              </log-message-service>
+            </services>
+          </service-collection>
+          <producer class="fs-producer">
+            <unique-id>furious-mayer</unique-id>
+            <destination class="configured-destination">
+              <destination>msgs/in</destination>
+            </destination>
+            <create-dirs>true</create-dirs>
+            <fs-worker class="fs-nio-worker"/>
+            <filename-creator class="metadata-file-name-creator">
+              <metadata-key>filenameIn</metadata-key>
+              <default-name>MetadataFileNameCreator_default</default-name>
+            </filename-creator>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>desperate-volhard IN</unique-id>
+          <message-metrics-interceptor>
+            <unique-id>desperate-volhard IN-MessageMetrics</unique-id>
+            <timeslice-duration>
+              <unit>MINUTES</unit>
+              <interval>5</interval>
+            </timeslice-duration>
+            <timeslice-history-count>12</timeslice-history-count>
+          </message-metrics-interceptor>
+          <in-flight-workflow-interceptor>
+            <unique-id>desperate-volhard IN-InFlight</unique-id>
+          </in-flight-workflow-interceptor>
+        </standard-workflow>
+      </workflow-list>
+      <unique-id>FsOutput</unique-id>
+    </channel>
+  </channel-list>
+  <message-error-digester class="standard-message-error-digester">
+    <unique-id>ErrorDigest</unique-id>
+    <digest-max-size>100</digest-max-size>
+  </message-error-digester>
+</adapter>

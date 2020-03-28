@@ -1,0 +1,401 @@
+2020-03-28T18:05:57,852 TRACE [main] [com.adaptris.core.management.BootstrapProperties] Properties resource is [bootstrap.properties]
+2020-03-28T18:05:57,866 TRACE [main] [com.adaptris.core.management.properties.PropertyResolver] Parsing PropertyResolver URL [jar:file:/F:/Apps/Adaptris/Interlok/lib/interlok-core.jar!/META-INF/com/adaptris/core/management/properties/resolver]
+2020-03-28T18:05:57,868 TRACE [main] [com.adaptris.core.management.properties.PropertyResolver] Registered Decoders : {password=com.adaptris.core.management.properties.PasswordDecoder}
+2020-03-28T18:05:57,869 TRACE [main] [com.adaptris.core.management.BootstrapProperties] Adding org.jruby.embed.localcontext.scope=threadsafe to system properties
+2020-03-28T18:05:57,869 TRACE [main] [com.adaptris.core.management.BootstrapProperties] Adding org.jboss.logging.provider=slf4j to system properties
+2020-03-28T18:05:59,197 TRACE [main] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullProcessingExceptionHandler
+2020-03-28T18:05:59,198 TRACE [main] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.fs.FsProducer
+2020-03-28T18:05:59,225 TRACE [main] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NoRetries
+2020-03-28T18:05:59,225 TRACE [main] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullProcessingExceptionHandler
+2020-03-28T18:05:59,226 TRACE [main] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullLogHandler
+2020-03-28T18:05:59,231 TRACE [main] [com.adaptris.core.runtime.AdapterManager] Registering com.adaptris.core.runtime.AdapterManager against com.adaptris:type=Adapter,id=sad-raman
+2020-03-28T18:05:59,233 TRACE [main] [com.adaptris.core.runtime.ChannelManager] Registering com.adaptris.core.runtime.ChannelManager against com.adaptris:type=Channel,adapter=sad-raman,id=backstabbing-hypatia
+2020-03-28T18:05:59,234 TRACE [main] [com.adaptris.core.runtime.WorkflowManager] Registering com.adaptris.core.runtime.WorkflowManager against com.adaptris:type=Workflow,adapter=sad-raman,channel=backstabbing-hypatia,id=elastic-mcclintock
+2020-03-28T18:05:59,235 TRACE [main] [com.adaptris.core.interceptor.MessageMetricsStatistics] Registering com.adaptris.core.interceptor.MessageMetricsStatistics against com.adaptris:type=Metrics,adapter=sad-raman,channel=backstabbing-hypatia,workflow=elastic-mcclintock,id=elastic-mcclintock-MessageMetrics
+2020-03-28T18:05:59,236 TRACE [main] [com.adaptris.core.fs.FsConsumerMonitor] Registering com.adaptris.core.fs.FsConsumerMonitor against com.adaptris:type=ConsumerMonitor,adapter=sad-raman,channel=backstabbing-hypatia,workflow=elastic-mcclintock,id=tender-payne IN
+2020-03-28T18:05:59,236 TRACE [main] [com.adaptris.core.interceptor.MessageInFlight] Registering com.adaptris.core.interceptor.MessageInFlight against com.adaptris:type=InFlight,adapter=sad-raman,channel=backstabbing-hypatia,workflow=elastic-mcclintock,id=elastic-mcclintock-InFlight
+2020-03-28T18:05:59,237 TRACE [main] [com.adaptris.core.runtime.AdapterComponentChecker] Registering com.adaptris.core.runtime.AdapterComponentChecker against com.adaptris:type=ComponentChecker,adapter=sad-raman,id=AdapterComponentChecker
+2020-03-28T18:05:59,238 TRACE [main] [com.adaptris.core.runtime.StandardMessageErrorDigesterJmx] Registering com.adaptris.core.runtime.StandardMessageErrorDigesterJmx against com.adaptris:type=MessageErrorDigest,adapter=sad-raman,id=ErrorDigest
+2020-03-28T18:05:59,243 INFO  [main] [com.adaptris.core.management.UnifiedBootstrap] Adapter created
+2020-03-28T18:05:59,245 TRACE [main] [com.adaptris.core.management.config.XStreamConfigManager] persisting [file://localhost/./config/adapter.xml] to [file://localhost/./config/adapter-backup.xml]
+2020-03-28T18:05:59,263 TRACE [main] [com.adaptris.core.management.ManagementComponentFactory] com.adaptris.core.management.jetty.JettyServerComponent#init([java.util.Properties])
+2020-03-28T18:05:59,264 TRACE [main] [com.adaptris.core.management.ManagementComponentFactory] com.adaptris.core.management.jmx.JmxRemoteComponent#init([java.util.Properties])
+2020-03-28T18:05:59,265 TRACE [main] [com.adaptris.core.management.jmx.JmxRemoteComponent] JMX Protocol=[jmxmp]
+2020-03-28T18:05:59,266 TRACE [main] [com.adaptris.core.management.jmx.JmxRemoteComponent] JMX Environment : {}
+2020-03-28T18:05:59,294 TRACE [main] [com.adaptris.core.management.jmx.JmxRemoteComponent] MBean [com.adaptris:type=JmxConnectorServer] registered
+2020-03-28T18:05:59,297 TRACE [SimpleBootstrap] [com.adaptris.core.management.ManagementComponentFactory] com.adaptris.core.management.jetty.JettyServerComponent#start()
+2020-03-28T18:05:59,299 DEBUG [EmbeddedJettyStart] [com.adaptris.core.management.jetty.JettyServerComponent] Creating Jetty wrapper
+2020-03-28T18:05:59,301 TRACE [EmbeddedJettyStart] [com.adaptris.core.management.jetty.JettyServerComponent] Create Server from XML
+2020-03-28T18:05:59,302 TRACE [EmbeddedJettyStart] [com.adaptris.core.management.jetty.JettyServerComponent] Connecting to configured URL file:/F:/Apps/Adaptris/Interlok/./config/jetty.xml
+2020-03-28T18:05:59,359 TRACE [EmbeddedJettyStart] [com.adaptris.core.management.jetty.JettyServerComponent] Additional properties for XML Config {}
+2020-03-28T18:05:59,508 WARN  [EmbeddedJettyStart] [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-03-28T18:05:59,593 TRACE [SimpleBootstrap] [com.adaptris.core.management.ManagementComponentFactory] com.adaptris.core.management.jmx.JmxRemoteComponent#start()
+2020-03-28T18:05:59,595 INFO  [SimpleBootstrap] [com.adaptris.core.management.BootstrapProperties] Could not parse numerical value [null] for key [operationTimeout] - using default value [120000]
+2020-03-28T18:05:59,605 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): Adapter(sad-raman)
+2020-03-28T18:05:59,606 DEBUG [JmxRemoteComponent] [com.adaptris.core.management.jmx.JmxRemoteComponent] Starting JMXConnectorServer : com.adaptris:type=JmxConnectorServer
+2020-03-28T18:05:59,612 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Prepare(): FixedIntervalPoller
+2020-03-28T18:05:59,615 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Prepare(): LogMessageService(stoic-meninsky)
+2020-03-28T18:05:59,619 WARN  [JMX-Request-0] [com.adaptris.core.Adapter] [Adapter(sad-raman)] has a MessageErrorHandler with no behaviour; messages may be discarded upon exception
+2020-03-28T18:05:59,620 DEBUG [JMX-Request-0] [com.adaptris.core.Adapter] FailedMessageRetrier []
+2020-03-28T18:05:59,623 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): EventEmissary
+2020-03-28T18:05:59,624 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullConnection(sleepy-swartz)
+2020-03-28T18:05:59,630 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Initialised [NullConnection(sleepy-swartz)]
+2020-03-28T18:05:59,636 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullMessageProducer(ecstatic-knuth)
+2020-03-28T18:05:59,638 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Initialised [DefaultEventHandler(DefaultEventHandler)]
+2020-03-28T18:05:59,640 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): EventEmissary
+2020-03-28T18:05:59,641 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullMessageProducer(ecstatic-knuth)
+2020-03-28T18:05:59,642 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullConnection(sleepy-swartz)
+2020-03-28T18:05:59,644 TRACE [JMX-Request-0] [com.adaptris.core.InitialisedState] Started [NullConnection(sleepy-swartz)]
+2020-03-28T18:05:59,645 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Started [DefaultEventHandler(DefaultEventHandler)]
+2020-03-28T18:05:59,648 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): SharedComponentList
+2020-03-28T18:05:59,649 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): StandardMessageErrorDigester(ErrorDigest)
+2020-03-28T18:05:59,651 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullProcessingExceptionHandler(cranky-stonebraker)
+2020-03-28T18:05:59,651 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Initialised [NullProcessingExceptionHandler(cranky-stonebraker)]
+2020-03-28T18:05:59,661 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): ChannelList
+2020-03-28T18:05:59,662 TRACE [JMX-Request-0] [com.adaptris.core.ChannelList] Channels that can be manipulated are: [backstabbing-hypatia]
+2020-03-28T18:05:59,668 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): Channel(backstabbing-hypatia)
+2020-03-28T18:05:59,669 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullConnection(serene-knuth)
+2020-03-28T18:05:59,670 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [NullConnection(serene-knuth)]
+2020-03-28T18:05:59,670 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullConnection(sad-lovelace)
+2020-03-28T18:05:59,674 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [NullConnection(sad-lovelace)]
+2020-03-28T18:05:59,675 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): WorkflowList
+2020-03-28T18:05:59,656 DEBUG [JmxRemoteComponent] [com.adaptris.core.management.jmx.JmxRemoteComponent] Started JMXConnectorServer : com.adaptris:type=JmxConnectorServer
+2020-03-28T18:05:59,676 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.WorkflowList] Workflows that can be manipulated are: [elastic-mcclintock]
+2020-03-28T18:05:59,678 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:05:59,679 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)
+2020-03-28T18:05:59,682 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): StandardStatisticManager
+2020-03-28T18:05:59,683 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)]
+2020-03-28T18:05:59,684 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)
+2020-03-28T18:05:59,684 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)]
+2020-03-28T18:05:59,684 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): FsProducer(romantic-bhabha OUT)
+2020-03-28T18:05:59,685 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): ServiceList(condescending-williams)
+2020-03-28T18:05:59,685 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): LogMessageService(stoic-meninsky)
+2020-03-28T18:05:59,686 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [LogMessageService(stoic-meninsky)]
+2020-03-28T18:05:59,686 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [ServiceList(condescending-williams)]
+2020-03-28T18:05:59,687 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): FsConsumer(tender-payne IN)
+2020-03-28T18:05:59,690 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): FixedIntervalPoller
+2020-03-28T18:05:59,691 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [FsConsumer(tender-payne IN)]
+2020-03-28T18:05:59,692 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [StandardWorkflow(elastic-mcclintock)]
+2020-03-28T18:05:59,692 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [Channel(backstabbing-hypatia)]
+2020-03-28T18:05:59,693 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NoRetries(sharp-agnesi)
+2020-03-28T18:05:59,710 INFO  [JMX-Request-0] [com.adaptris.core.Adapter] Adapter(sad-raman) Initialised
+2020-03-28T18:05:59,712 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Initialised [Adapter(sad-raman)]
+2020-03-28T18:05:59,712 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): StandardMessageErrorDigester(ErrorDigest)
+2020-03-28T18:05:59,713 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullProcessingExceptionHandler(cranky-stonebraker)
+2020-03-28T18:05:59,713 TRACE [JMX-Request-0] [com.adaptris.core.InitialisedState] Started [NullProcessingExceptionHandler(cranky-stonebraker)]
+2020-03-28T18:05:59,715 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): ChannelList
+2020-03-28T18:05:59,718 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): Channel(backstabbing-hypatia)
+2020-03-28T18:05:59,719 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullConnection(serene-knuth)
+2020-03-28T18:05:59,720 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [NullConnection(serene-knuth)]
+2020-03-28T18:05:59,725 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): WorkflowList
+2020-03-28T18:05:59,733 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:05:59,734 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)
+2020-03-28T18:05:59,734 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): StandardStatisticManager
+2020-03-28T18:05:59,735 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)]
+2020-03-28T18:05:59,736 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)
+2020-03-28T18:05:59,736 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)]
+2020-03-28T18:05:59,737 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): FsProducer(romantic-bhabha OUT)
+2020-03-28T18:05:59,738 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): ServiceList(condescending-williams)
+2020-03-28T18:05:59,739 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): LogMessageService(stoic-meninsky)
+2020-03-28T18:05:59,739 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [LogMessageService(stoic-meninsky)]
+2020-03-28T18:05:59,740 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [ServiceList(condescending-williams)]
+2020-03-28T18:05:59,740 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): FsConsumer(tender-payne IN)
+2020-03-28T18:05:59,740 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): FixedIntervalPoller
+2020-03-28T18:05:59,741 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.FixedIntervalPoller] Scheduled java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@6703d5fd
+2020-03-28T18:05:59,742 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [FsConsumer(tender-payne IN)]
+2020-03-28T18:05:59,743 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [StandardWorkflow(elastic-mcclintock)]
+2020-03-28T18:05:59,743 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullConnection(sad-lovelace)
+2020-03-28T18:05:59,744 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [NullConnection(sad-lovelace)]
+2020-03-28T18:05:59,744 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [Channel(backstabbing-hypatia)]
+2020-03-28T18:05:59,745 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NoRetries(sharp-agnesi)
+2020-03-28T18:05:59,745 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): SharedComponentList
+2020-03-28T18:05:59,750 INFO  [JMX-Request-0] [com.adaptris.core.Adapter] Adapter(sad-raman) Started
+2020-03-28T18:05:59,751 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Started [Adapter(sad-raman)]
+2020-03-28T18:05:59,843 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:06:11,933 TRACE [EmbeddedJettyStart] [com.adaptris.core.management.BootstrapProperties] Properties resource is [bootstrap.properties]
+2020-03-28T18:06:18,462 DEBUG [EmbeddedJettyStart] [com.adaptris.core.management.jetty.JettyServerComponent] JettyServerComponent Started
+2020-03-28T18:06:19,845 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:06:39,848 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [1] ms
+2020-03-28T18:06:59,727 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): Adapter(sad-raman)
+2020-03-28T18:06:59,727 INFO  [JMX-Request-1] [com.adaptris.core.Adapter] stopping adapter [sad-raman] if there are polling loops configured this may take some time
+2020-03-28T18:06:59,728 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NoRetries(sharp-agnesi)
+2020-03-28T18:06:59,728 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): ChannelList
+2020-03-28T18:06:59,729 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): Channel(backstabbing-hypatia)
+2020-03-28T18:06:59,729 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullConnection(sad-lovelace)
+2020-03-28T18:06:59,729 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [NullConnection(sad-lovelace)]
+2020-03-28T18:06:59,731 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): WorkflowList
+2020-03-28T18:06:59,732 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): FsConsumer(tender-payne IN)
+2020-03-28T18:06:59,732 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): FixedIntervalPoller
+2020-03-28T18:06:59,733 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.FixedIntervalPoller] Poller java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@6703d5fd cancelled
+2020-03-28T18:06:59,735 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [FsConsumer(tender-payne IN)]
+2020-03-28T18:06:59,735 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:06:59,736 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): FsConsumer(tender-payne IN)
+2020-03-28T18:06:59,736 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): ServiceList(condescending-williams)
+2020-03-28T18:06:59,736 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): LogMessageService(stoic-meninsky)
+2020-03-28T18:06:59,738 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [LogMessageService(stoic-meninsky)]
+2020-03-28T18:06:59,739 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [ServiceList(condescending-williams)]
+2020-03-28T18:06:59,739 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): FsProducer(romantic-bhabha OUT)
+2020-03-28T18:06:59,739 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)
+2020-03-28T18:06:59,740 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): StandardStatisticManager
+2020-03-28T18:06:59,740 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)]
+2020-03-28T18:06:59,740 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)
+2020-03-28T18:06:59,740 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)]
+2020-03-28T18:06:59,741 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [StandardWorkflow(elastic-mcclintock)]
+2020-03-28T18:06:59,741 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullConnection(serene-knuth)
+2020-03-28T18:06:59,742 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [NullConnection(serene-knuth)]
+2020-03-28T18:06:59,742 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [Channel(backstabbing-hypatia)]
+2020-03-28T18:06:59,742 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullProcessingExceptionHandler(cranky-stonebraker)
+2020-03-28T18:06:59,742 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Stopped [NullProcessingExceptionHandler(cranky-stonebraker)]
+2020-03-28T18:06:59,743 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): StandardMessageErrorDigester(ErrorDigest)
+2020-03-28T18:06:59,745 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): SharedComponentList
+2020-03-28T18:06:59,745 INFO  [JMX-Request-1] [com.adaptris.core.Adapter] Adapter(sad-raman) Stopped
+2020-03-28T18:06:59,745 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Stopped [Adapter(sad-raman)]
+2020-03-28T18:06:59,746 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NoRetries(sharp-agnesi)
+2020-03-28T18:06:59,746 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): ChannelList
+2020-03-28T18:06:59,746 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): Channel(backstabbing-hypatia)
+2020-03-28T18:06:59,746 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullConnection(sad-lovelace)
+2020-03-28T18:06:59,747 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [NullConnection(sad-lovelace)]
+2020-03-28T18:06:59,747 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullConnection(serene-knuth)
+2020-03-28T18:06:59,747 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [NullConnection(serene-knuth)]
+2020-03-28T18:06:59,748 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): WorkflowList
+2020-03-28T18:06:59,748 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FsConsumer(tender-payne IN)
+2020-03-28T18:06:59,748 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FixedIntervalPoller
+2020-03-28T18:06:59,749 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [FsConsumer(tender-payne IN)]
+2020-03-28T18:06:59,749 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:06:59,749 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FsConsumer(tender-payne IN)
+2020-03-28T18:06:59,749 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): ServiceList(condescending-williams)
+2020-03-28T18:06:59,749 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): LogMessageService(stoic-meninsky)
+2020-03-28T18:06:59,750 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [LogMessageService(stoic-meninsky)]
+2020-03-28T18:06:59,750 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [ServiceList(condescending-williams)]
+2020-03-28T18:06:59,750 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FsProducer(romantic-bhabha OUT)
+2020-03-28T18:06:59,751 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)
+2020-03-28T18:06:59,752 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): StandardStatisticManager
+2020-03-28T18:06:59,753 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)]
+2020-03-28T18:06:59,753 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)
+2020-03-28T18:06:59,754 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)]
+2020-03-28T18:06:59,754 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [StandardWorkflow(elastic-mcclintock)]
+2020-03-28T18:06:59,754 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [Channel(backstabbing-hypatia)]
+2020-03-28T18:06:59,754 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullProcessingExceptionHandler(cranky-stonebraker)
+2020-03-28T18:06:59,755 TRACE [JMX-Request-1] [com.adaptris.core.StoppedState] Closed [NullProcessingExceptionHandler(cranky-stonebraker)]
+2020-03-28T18:06:59,755 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): StandardMessageErrorDigester(ErrorDigest)
+2020-03-28T18:06:59,757 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): SharedComponentList
+2020-03-28T18:06:59,764 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): EventEmissary
+2020-03-28T18:06:59,765 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullConnection(sleepy-swartz)
+2020-03-28T18:06:59,765 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Stopped [NullConnection(sleepy-swartz)]
+2020-03-28T18:06:59,765 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullMessageProducer(ecstatic-knuth)
+2020-03-28T18:06:59,765 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Stopped [DefaultEventHandler(DefaultEventHandler)]
+2020-03-28T18:06:59,766 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): EventEmissary
+2020-03-28T18:06:59,766 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullConnection(sleepy-swartz)
+2020-03-28T18:06:59,766 TRACE [JMX-Request-1] [com.adaptris.core.StoppedState] Closed [NullConnection(sleepy-swartz)]
+2020-03-28T18:06:59,767 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullMessageProducer(ecstatic-knuth)
+2020-03-28T18:06:59,767 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Closed [DefaultEventHandler(DefaultEventHandler)]
+2020-03-28T18:06:59,767 INFO  [JMX-Request-1] [com.adaptris.core.Adapter] Adapter(sad-raman) Closed
+2020-03-28T18:06:59,768 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Closed [Adapter(sad-raman)]
+2020-03-28T18:06:59,831 TRACE [JMX-Request-2] [com.adaptris.core.util.LifecycleHelper] Executing Close(): Adapter(sad-raman)
+2020-03-28T18:06:59,832 TRACE [JMX-Request-2:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): Channel(backstabbing-hypatia)
+2020-03-28T18:06:59,832 TRACE [JMX-Request-2:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FsConsumer(tender-payne IN)
+2020-03-28T18:06:59,832 TRACE [JMX-Request-2:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:06:59,881 TRACE [Job_Executor5] [com.adaptris.core.util.LifecycleHelper] Executing Close(): Adapter(sad-raman)
+2020-03-28T18:06:59,882 TRACE [Job_Executor5:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): Channel(backstabbing-hypatia)
+2020-03-28T18:06:59,882 TRACE [Job_Executor5:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FsConsumer(tender-payne IN)
+2020-03-28T18:06:59,882 TRACE [Job_Executor5:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:06:59,891 TRACE [Job_Executor5] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.fs.FsProducer
+2020-03-28T18:06:59,891 TRACE [Job_Executor5] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullProcessingExceptionHandler
+2020-03-28T18:06:59,895 TRACE [Job_Executor5] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NoRetries
+2020-03-28T18:06:59,895 TRACE [Job_Executor5] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullProcessingExceptionHandler
+2020-03-28T18:06:59,895 TRACE [Job_Executor5] [com.adaptris.core.runtime.RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullLogHandler
+2020-03-28T18:06:59,898 TRACE [Job_Executor5] [com.adaptris.core.runtime.AdapterManager] Registering com.adaptris.core.runtime.AdapterManager against com.adaptris:type=Adapter,id=sad-raman
+2020-03-28T18:06:59,899 TRACE [Job_Executor5] [com.adaptris.core.runtime.ChannelManager] Registering com.adaptris.core.runtime.ChannelManager against com.adaptris:type=Channel,adapter=sad-raman,id=backstabbing-hypatia
+2020-03-28T18:06:59,899 TRACE [Job_Executor5] [com.adaptris.core.runtime.WorkflowManager] Registering com.adaptris.core.runtime.WorkflowManager against com.adaptris:type=Workflow,adapter=sad-raman,channel=backstabbing-hypatia,id=elastic-mcclintock
+2020-03-28T18:06:59,900 TRACE [Job_Executor5] [com.adaptris.core.fs.FsConsumerMonitor] Registering com.adaptris.core.fs.FsConsumerMonitor against com.adaptris:type=ConsumerMonitor,adapter=sad-raman,channel=backstabbing-hypatia,workflow=elastic-mcclintock,id=tender-payne IN
+2020-03-28T18:06:59,900 TRACE [Job_Executor5] [com.adaptris.core.interceptor.MessageMetricsStatistics] Registering com.adaptris.core.interceptor.MessageMetricsStatistics against com.adaptris:type=Metrics,adapter=sad-raman,channel=backstabbing-hypatia,workflow=elastic-mcclintock,id=elastic-mcclintock-MessageMetrics
+2020-03-28T18:06:59,902 TRACE [Job_Executor5] [com.adaptris.core.interceptor.MessageInFlight] Registering com.adaptris.core.interceptor.MessageInFlight against com.adaptris:type=InFlight,adapter=sad-raman,channel=backstabbing-hypatia,workflow=elastic-mcclintock,id=elastic-mcclintock-InFlight
+2020-03-28T18:06:59,902 TRACE [Job_Executor5] [com.adaptris.core.runtime.StandardMessageErrorDigesterJmx] Registering com.adaptris.core.runtime.StandardMessageErrorDigesterJmx against com.adaptris:type=MessageErrorDigest,adapter=sad-raman,id=ErrorDigest
+2020-03-28T18:06:59,903 TRACE [Job_Executor5] [com.adaptris.core.runtime.AdapterComponentChecker] Registering com.adaptris.core.runtime.AdapterComponentChecker against com.adaptris:type=ComponentChecker,adapter=sad-raman,id=AdapterComponentChecker
+2020-03-28T18:07:00,011 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): Adapter(sad-raman)
+2020-03-28T18:07:00,012 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Prepare(): FixedIntervalPoller
+2020-03-28T18:07:00,012 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Prepare(): LogMessageService(stoic-meninsky)
+2020-03-28T18:07:00,012 WARN  [JMX-Request-0] [com.adaptris.core.Adapter] [Adapter(sad-raman)] has a MessageErrorHandler with no behaviour; messages may be discarded upon exception
+2020-03-28T18:07:00,013 DEBUG [JMX-Request-0] [com.adaptris.core.Adapter] FailedMessageRetrier []
+2020-03-28T18:07:00,014 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): EventEmissary
+2020-03-28T18:07:00,014 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullConnection(sleepy-swartz)
+2020-03-28T18:07:00,014 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Initialised [NullConnection(sleepy-swartz)]
+2020-03-28T18:07:00,015 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullMessageProducer(ecstatic-knuth)
+2020-03-28T18:07:00,015 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Initialised [DefaultEventHandler(DefaultEventHandler)]
+2020-03-28T18:07:00,015 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): EventEmissary
+2020-03-28T18:07:00,015 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullMessageProducer(ecstatic-knuth)
+2020-03-28T18:07:00,016 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullConnection(sleepy-swartz)
+2020-03-28T18:07:00,016 TRACE [JMX-Request-0] [com.adaptris.core.InitialisedState] Started [NullConnection(sleepy-swartz)]
+2020-03-28T18:07:00,017 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Started [DefaultEventHandler(DefaultEventHandler)]
+2020-03-28T18:07:00,017 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): SharedComponentList
+2020-03-28T18:07:00,019 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): StandardMessageErrorDigester(ErrorDigest)
+2020-03-28T18:07:00,023 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullProcessingExceptionHandler(cranky-stonebraker)
+2020-03-28T18:07:00,024 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Initialised [NullProcessingExceptionHandler(cranky-stonebraker)]
+2020-03-28T18:07:00,024 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): ChannelList
+2020-03-28T18:07:00,024 TRACE [JMX-Request-0] [com.adaptris.core.ChannelList] Channels that can be manipulated are: [backstabbing-hypatia]
+2020-03-28T18:07:00,025 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): Channel(backstabbing-hypatia)
+2020-03-28T18:07:00,025 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullConnection(serene-knuth)
+2020-03-28T18:07:00,027 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [NullConnection(serene-knuth)]
+2020-03-28T18:07:00,027 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NullConnection(sad-lovelace)
+2020-03-28T18:07:00,027 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [NullConnection(sad-lovelace)]
+2020-03-28T18:07:00,028 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): WorkflowList
+2020-03-28T18:07:00,028 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.WorkflowList] Workflows that can be manipulated are: [elastic-mcclintock]
+2020-03-28T18:07:00,029 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:07:00,029 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)
+2020-03-28T18:07:00,030 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): StandardStatisticManager
+2020-03-28T18:07:00,030 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)]
+2020-03-28T18:07:00,031 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)
+2020-03-28T18:07:00,031 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)]
+2020-03-28T18:07:00,032 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): FsProducer(romantic-bhabha OUT)
+2020-03-28T18:07:00,032 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): ServiceList(condescending-williams)
+2020-03-28T18:07:00,033 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): LogMessageService(stoic-meninsky)
+2020-03-28T18:07:00,036 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [LogMessageService(stoic-meninsky)]
+2020-03-28T18:07:00,040 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [ServiceList(condescending-williams)]
+2020-03-28T18:07:00,042 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): FsConsumer(tender-payne IN)
+2020-03-28T18:07:00,042 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.util.LifecycleHelper] Executing Init(): FixedIntervalPoller
+2020-03-28T18:07:00,044 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [FsConsumer(tender-payne IN)]
+2020-03-28T18:07:00,046 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [StandardWorkflow(elastic-mcclintock)]
+2020-03-28T18:07:00,047 TRACE [JMX-Request-0:backstabbing-hypatia.INIT] [com.adaptris.core.ClosedState] Initialised [Channel(backstabbing-hypatia)]
+2020-03-28T18:07:00,047 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Init(): NoRetries(sharp-agnesi)
+2020-03-28T18:07:00,049 INFO  [JMX-Request-0] [com.adaptris.core.Adapter] Adapter(sad-raman) Initialised
+2020-03-28T18:07:00,053 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Initialised [Adapter(sad-raman)]
+2020-03-28T18:07:00,053 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): StandardMessageErrorDigester(ErrorDigest)
+2020-03-28T18:07:00,053 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullProcessingExceptionHandler(cranky-stonebraker)
+2020-03-28T18:07:00,054 TRACE [JMX-Request-0] [com.adaptris.core.InitialisedState] Started [NullProcessingExceptionHandler(cranky-stonebraker)]
+2020-03-28T18:07:00,054 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): ChannelList
+2020-03-28T18:07:00,055 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): Channel(backstabbing-hypatia)
+2020-03-28T18:07:00,055 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullConnection(serene-knuth)
+2020-03-28T18:07:00,055 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [NullConnection(serene-knuth)]
+2020-03-28T18:07:00,056 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): WorkflowList
+2020-03-28T18:07:00,056 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:07:00,056 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)
+2020-03-28T18:07:00,057 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): StandardStatisticManager
+2020-03-28T18:07:00,057 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)]
+2020-03-28T18:07:00,057 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)
+2020-03-28T18:07:00,057 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)]
+2020-03-28T18:07:00,058 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): FsProducer(romantic-bhabha OUT)
+2020-03-28T18:07:00,059 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): ServiceList(condescending-williams)
+2020-03-28T18:07:00,059 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): LogMessageService(stoic-meninsky)
+2020-03-28T18:07:00,059 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [LogMessageService(stoic-meninsky)]
+2020-03-28T18:07:00,060 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [ServiceList(condescending-williams)]
+2020-03-28T18:07:00,061 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): FsConsumer(tender-payne IN)
+2020-03-28T18:07:00,061 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): FixedIntervalPoller
+2020-03-28T18:07:00,061 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.FixedIntervalPoller] Scheduled java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@4bf5e5a1
+2020-03-28T18:07:00,062 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [FsConsumer(tender-payne IN)]
+2020-03-28T18:07:00,062 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [StandardWorkflow(elastic-mcclintock)]
+2020-03-28T18:07:00,062 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NullConnection(sad-lovelace)
+2020-03-28T18:07:00,062 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [NullConnection(sad-lovelace)]
+2020-03-28T18:07:00,063 TRACE [JMX-Request-0:backstabbing-hypatia.START] [com.adaptris.core.InitialisedState] Started [Channel(backstabbing-hypatia)]
+2020-03-28T18:07:00,063 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): NoRetries(sharp-agnesi)
+2020-03-28T18:07:00,063 TRACE [JMX-Request-0] [com.adaptris.core.util.LifecycleHelper] Executing Start(): SharedComponentList
+2020-03-28T18:07:00,064 INFO  [JMX-Request-0] [com.adaptris.core.Adapter] Adapter(sad-raman) Started
+2020-03-28T18:07:00,065 TRACE [JMX-Request-0] [com.adaptris.core.ClosedState] Started [Adapter(sad-raman)]
+2020-03-28T18:07:00,162 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:07:20,166 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:07:40,169 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [1] ms
+2020-03-28T18:08:00,172 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:08:20,175 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:08:40,178 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:09:00,181 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [1] ms
+2020-03-28T18:09:20,183 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:09:40,187 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [1] ms
+2020-03-28T18:10:00,190 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:10:20,193 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:10:40,196 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:11:00,199 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:11:20,202 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:11:40,205 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:12:00,208 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:12:20,210 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:12:40,212 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:13:00,214 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:13:20,217 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:13:40,219 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:14:00,221 DEBUG [elastic-mcclintock@backstabbing-hypatia] [com.adaptris.core.FixedIntervalPoller] time to process [0] messages [0] ms
+2020-03-28T18:14:01,855 INFO  [Shutdown Handler] [java.lang.Thread] Running ShutdownHandler...
+2020-03-28T18:14:01,856 TRACE [Shutdown Handler] [java.lang.Thread] Sending Shutdown events for all adapters
+2020-03-28T18:14:01,868 INFO  [Shutdown Handler] [java.lang.Thread] Shutting down Adapter(s)
+2020-03-28T18:14:01,879 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): Adapter(sad-raman)
+2020-03-28T18:14:01,880 INFO  [JMX-Request-1] [com.adaptris.core.Adapter] stopping adapter [sad-raman] if there are polling loops configured this may take some time
+2020-03-28T18:14:01,882 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NoRetries(sharp-agnesi)
+2020-03-28T18:14:01,883 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): ChannelList
+2020-03-28T18:14:01,884 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): Channel(backstabbing-hypatia)
+2020-03-28T18:14:01,886 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullConnection(sad-lovelace)
+2020-03-28T18:14:01,886 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [NullConnection(sad-lovelace)]
+2020-03-28T18:14:01,888 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): WorkflowList
+2020-03-28T18:14:01,888 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): FsConsumer(tender-payne IN)
+2020-03-28T18:14:01,889 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): FixedIntervalPoller
+2020-03-28T18:14:01,890 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.FixedIntervalPoller] Poller java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@4bf5e5a1 cancelled
+2020-03-28T18:14:01,895 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [FsConsumer(tender-payne IN)]
+2020-03-28T18:14:01,895 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:14:01,895 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): FsConsumer(tender-payne IN)
+2020-03-28T18:14:01,896 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): ServiceList(condescending-williams)
+2020-03-28T18:14:01,898 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): LogMessageService(stoic-meninsky)
+2020-03-28T18:14:01,902 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [LogMessageService(stoic-meninsky)]
+2020-03-28T18:14:01,903 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [ServiceList(condescending-williams)]
+2020-03-28T18:14:01,904 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): FsProducer(romantic-bhabha OUT)
+2020-03-28T18:14:01,904 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)
+2020-03-28T18:14:01,905 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): StandardStatisticManager
+2020-03-28T18:14:01,906 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)]
+2020-03-28T18:14:01,907 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)
+2020-03-28T18:14:01,909 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)]
+2020-03-28T18:14:01,910 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [StandardWorkflow(elastic-mcclintock)]
+2020-03-28T18:14:01,910 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullConnection(serene-knuth)
+2020-03-28T18:14:01,912 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [NullConnection(serene-knuth)]
+2020-03-28T18:14:01,913 TRACE [JMX-Request-1:backstabbing-hypatia.STOP] [com.adaptris.core.StartedState] Stopped [Channel(backstabbing-hypatia)]
+2020-03-28T18:14:01,913 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullProcessingExceptionHandler(cranky-stonebraker)
+2020-03-28T18:14:01,913 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Stopped [NullProcessingExceptionHandler(cranky-stonebraker)]
+2020-03-28T18:14:01,915 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): StandardMessageErrorDigester(ErrorDigest)
+2020-03-28T18:14:01,916 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): SharedComponentList
+2020-03-28T18:14:01,917 INFO  [JMX-Request-1] [com.adaptris.core.Adapter] Adapter(sad-raman) Stopped
+2020-03-28T18:14:01,918 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Stopped [Adapter(sad-raman)]
+2020-03-28T18:14:01,919 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NoRetries(sharp-agnesi)
+2020-03-28T18:14:01,921 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): ChannelList
+2020-03-28T18:14:01,922 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): Channel(backstabbing-hypatia)
+2020-03-28T18:14:01,925 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullConnection(sad-lovelace)
+2020-03-28T18:14:01,925 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [NullConnection(sad-lovelace)]
+2020-03-28T18:14:01,926 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullConnection(serene-knuth)
+2020-03-28T18:14:01,927 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [NullConnection(serene-knuth)]
+2020-03-28T18:14:01,927 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): WorkflowList
+2020-03-28T18:14:01,928 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FsConsumer(tender-payne IN)
+2020-03-28T18:14:01,929 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FixedIntervalPoller
+2020-03-28T18:14:01,930 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [FsConsumer(tender-payne IN)]
+2020-03-28T18:14:01,932 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): StandardWorkflow(elastic-mcclintock)
+2020-03-28T18:14:01,932 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FsConsumer(tender-payne IN)
+2020-03-28T18:14:01,933 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): ServiceList(condescending-williams)
+2020-03-28T18:14:01,934 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): LogMessageService(stoic-meninsky)
+2020-03-28T18:14:01,935 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [LogMessageService(stoic-meninsky)]
+2020-03-28T18:14:01,935 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [ServiceList(condescending-williams)]
+2020-03-28T18:14:01,939 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): FsProducer(romantic-bhabha OUT)
+2020-03-28T18:14:01,939 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)
+2020-03-28T18:14:01,940 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): StandardStatisticManager
+2020-03-28T18:14:01,940 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [MessageMetricsInterceptor(elastic-mcclintock-MessageMetrics)]
+2020-03-28T18:14:01,942 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.util.LifecycleHelper] Executing Close(): InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)
+2020-03-28T18:14:01,943 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [InFlightWorkflowInterceptor(elastic-mcclintock-InFlight)]
+2020-03-28T18:14:01,945 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [StandardWorkflow(elastic-mcclintock)]
+2020-03-28T18:14:01,945 TRACE [JMX-Request-1:backstabbing-hypatia.CLOSE] [com.adaptris.core.StoppedState] Closed [Channel(backstabbing-hypatia)]
+2020-03-28T18:14:01,947 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullProcessingExceptionHandler(cranky-stonebraker)
+2020-03-28T18:14:01,948 TRACE [JMX-Request-1] [com.adaptris.core.StoppedState] Closed [NullProcessingExceptionHandler(cranky-stonebraker)]
+2020-03-28T18:14:01,949 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): StandardMessageErrorDigester(ErrorDigest)
+2020-03-28T18:14:01,950 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): SharedComponentList
+2020-03-28T18:14:01,951 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): EventEmissary
+2020-03-28T18:14:01,952 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullConnection(sleepy-swartz)
+2020-03-28T18:14:01,952 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Stopped [NullConnection(sleepy-swartz)]
+2020-03-28T18:14:01,953 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Stop(): NullMessageProducer(ecstatic-knuth)
+2020-03-28T18:14:01,953 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Stopped [DefaultEventHandler(DefaultEventHandler)]
+2020-03-28T18:14:01,954 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): EventEmissary
+2020-03-28T18:14:01,955 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullConnection(sleepy-swartz)
+2020-03-28T18:14:01,962 TRACE [JMX-Request-1] [com.adaptris.core.StoppedState] Closed [NullConnection(sleepy-swartz)]
+2020-03-28T18:14:01,962 TRACE [JMX-Request-1] [com.adaptris.core.util.LifecycleHelper] Executing Close(): NullMessageProducer(ecstatic-knuth)
+2020-03-28T18:14:01,963 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Closed [DefaultEventHandler(DefaultEventHandler)]
+2020-03-28T18:14:01,963 INFO  [JMX-Request-1] [com.adaptris.core.Adapter] Adapter(sad-raman) Closed
+2020-03-28T18:14:01,963 TRACE [JMX-Request-1] [com.adaptris.core.StartedState] Closed [Adapter(sad-raman)]
+2020-03-28T18:14:01,966 TRACE [Shutdown Handler] [java.lang.Thread] Stopping Management Components.
+2020-03-28T18:14:01,966 TRACE [Shutdown Handler] [com.adaptris.core.management.ManagementComponentFactory] com.adaptris.core.management.jmx.JmxRemoteComponent#stop()
+2020-03-28T18:14:01,970 TRACE [Shutdown Handler] [com.adaptris.core.management.ManagementComponentFactory] com.adaptris.core.management.jetty.JettyServerComponent#stop()
+2020-03-28T18:14:02,493 DEBUG [Shutdown Handler] [com.adaptris.core.management.jetty.JettyServerComponent] JettyServerComponent Stopped
+2020-03-28T18:14:02,493 TRACE [Shutdown Handler] [com.adaptris.core.management.ManagementComponentFactory] com.adaptris.core.management.jmx.JmxRemoteComponent#destroy()
+2020-03-28T18:14:02,494 TRACE [Shutdown Handler] [com.adaptris.core.management.jmx.JmxRemoteComponent] MBean [com.adaptris:type=JmxConnectorServer] unregistered
+2020-03-28T18:14:02,494 TRACE [Shutdown Handler] [com.adaptris.core.management.ManagementComponentFactory] com.adaptris.core.management.jetty.JettyServerComponent#destroy()
+2020-03-28T18:14:02,495 DEBUG [Shutdown Handler] [com.adaptris.core.management.jetty.JettyServerComponent] JettyServerComponent Destroyed
+2020-03-28T18:14:02,496 INFO  [Shutdown Handler] [java.lang.Thread] Adapter(s) closed

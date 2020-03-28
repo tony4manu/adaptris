@@ -1,0 +1,94 @@
+<adapter>
+  <unique-id>sad-raman</unique-id>
+  <start-up-event-imp>com.adaptris.core.event.StandardAdapterStartUpEvent</start-up-event-imp>
+  <heartbeat-event-imp>com.adaptris.core.HeartbeatEvent</heartbeat-event-imp>
+  <shared-components>
+    <connections/>
+    <services/>
+  </shared-components>
+  <event-handler class="default-event-handler">
+    <unique-id>DefaultEventHandler</unique-id>
+    <connection class="null-connection">
+      <unique-id>sleepy-swartz</unique-id>
+    </connection>
+    <producer class="null-message-producer">
+      <unique-id>ecstatic-knuth</unique-id>
+    </producer>
+  </event-handler>
+  <message-error-handler class="null-processing-exception-handler">
+    <unique-id>cranky-stonebraker</unique-id>
+  </message-error-handler>
+  <failed-message-retrier class="no-retries">
+    <unique-id>sharp-agnesi</unique-id>
+  </failed-message-retrier>
+  <channel-list>
+    <channel>
+      <consume-connection class="null-connection">
+        <unique-id>sad-lovelace</unique-id>
+      </consume-connection>
+      <produce-connection class="null-connection">
+        <unique-id>serene-knuth</unique-id>
+      </produce-connection>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="fs-consumer">
+            <unique-id>tender-payne IN</unique-id>
+            <destination class="configured-consume-destination">
+              <destination>messages/in</destination>
+            </destination>
+            <poller class="fixed-interval-poller">
+              <poll-interval>
+                <unit>SECONDS</unit>
+                <interval>20</interval>
+              </poll-interval>
+            </poller>
+            <create-dirs>true</create-dirs>
+            <file-sorter class="fs-sort-none"/>
+            <wip-suffix>.wip</wip-suffix>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>condescending-williams</unique-id>
+            <services>
+              <log-message-service>
+                <unique-id>stoic-meninsky</unique-id>
+                <log-level>DEBUG</log-level>
+                <log-prefix>LOG_</log-prefix>
+              </log-message-service>
+            </services>
+          </service-collection>
+          <producer class="fs-producer">
+            <message-factory class="default-message-factory">
+              <default-char-encoding>UTF-8</default-char-encoding>
+            </message-factory>
+            <unique-id>romantic-bhabha OUT</unique-id>
+            <destination class="configured-destination">
+              <destination>messages/out</destination>
+            </destination>
+            <fs-worker class="fs-overwrite-file"/>
+            <filename-creator class="formatted-filename-creator">
+              <filename-format>%1$s</filename-format>
+            </filename-creator>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>elastic-mcclintock</unique-id>
+          <message-metrics-interceptor>
+            <unique-id>elastic-mcclintock-MessageMetrics</unique-id>
+            <timeslice-duration>
+              <unit>MINUTES</unit>
+              <interval>5</interval>
+            </timeslice-duration>
+            <timeslice-history-count>12</timeslice-history-count>
+          </message-metrics-interceptor>
+          <in-flight-workflow-interceptor>
+            <unique-id>elastic-mcclintock-InFlight</unique-id>
+          </in-flight-workflow-interceptor>
+        </standard-workflow>
+      </workflow-list>
+      <unique-id>backstabbing-hypatia</unique-id>
+    </channel>
+  </channel-list>
+  <message-error-digester class="standard-message-error-digester">
+    <unique-id>ErrorDigest</unique-id>
+    <digest-max-size>100</digest-max-size>
+  </message-error-digester>
+</adapter>
